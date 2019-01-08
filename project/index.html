@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>BRUME</title>
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway:400,600,700" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js'></script>
+</head>
+<body>
+	<header class="header">
+		<div class="header-top">
+			<picture class="logo">
+        <source media="(min-width: 1050px)" srcset="img/logo-desktop.png">
+        <source media="(min-width: 768px)" srcset="img/logo-tablet.png">
+        <img class="logo__img" src="img/logo.png" width="60px" height="40px" alt="Логотип BRUME">
+      </picture>
+			<div class="menu-toggle"><button class="burger">Открыть/закрыть меню</button></div>
+			<a class="phone" href="tel://+78008234888">+7 (800) 823 48 88</a>
+		</div>
+		<div class="header-content">
+			<h1 class="header-content__title">Дизайн интерьеров</h1>
+			<p class="header-content__text">Воплотим в жизнь интерьер, который будет радовать лаконичностью и уютом.</p>
+			
+			<div class="header-content__inner">
+				<a class="header-content__link btn" href="#">Заказать дизайн</a>
+				<svg class="header-content__arrow" viewBox="0 0 476.213 476.213">
+					<use xlink:href="img/sprite.svg#arrow"></use>
+				</svg>
+			</div>
+
+			<div class="social header-content__social">
+				<a class="social__link social__link--vk" href="#">VK
+					<svg class="social__icon" viewBox="0 0 26 15"><use xlink:href="img/sprite.svg#vk-icon"></use></svg>
+				</a>
+				<a class="social__link social__link--inst" href="#">Intagramm
+					<svg class="social__icon" viewBox="0 0 21 21"><use xlink:href="img/sprite.svg#inst-icon"></use></svg>
+				</a>
+				<a class="social__link social__link--fb" href="#">Facebook
+					<svg class="social__icon" viewBox="0 0 12 22"><use xlink:href="img/sprite.svg#fb-icon"></use></svg>
+				</a>
+			</div>
+		</div>
+		<nav class="menu">
+			<ul class="menu__list">
+				<li class="menu__item"><a href="#">Главная</a></li>
+				<li class="menu__item menu__item--active"><a href="#">Преимущества</a></li>
+				<li class="menu__item"><a href="#">Портфолио</a></li>
+				<li class="menu__item"><a href="#">Наши услуги</a></li>
+				<li class="menu__item"><a href="#">Отзывы</a></li>
+				<li class="menu__item"><a href="#">Контакты</a></li>
+			</ul>
+		</nav>
+		<div class="slider">
+			<ul class="js__slider__images slider__images">
+				<li class="slider__images-item"><img class="slider__images-image" src="img/background.jpg" width="1115" height="550"/></li>
+				<li class="slider__images-item"><img class="slider__images-image" src="img/slide-2.jpg" width="1115" height="550"/></li>
+				<li class="slider__images-item"><img class="slider__images-image" src="img/slide-3.jpg" width="1115" height="550"/></li>
+				<li class="slider__images-item"><img class="slider__images-image" src="img/slide-6.jpg" width="1115" height="550"/></li>
+			</ul>
+			<div class="slider__controls">
+				<ol class="js__slider__pagers slider__pagers"></ol>
+			</div>
+		</div>
+	</header>
+	<main class="main">
+		<section class="features">
+			<h2 class="visually-hidden">Преимущества компании BRUME</h2>
+			<ul class="features__list">
+				<li class="features__item">
+					<h3 class="features__title">Берем весь ремонт на себя</h3>
+					<p class="features__text">Заботы по дизайну и отделке помещения возьмем на себя, останется дождаться завершения работ и наслаждаться результатом</p>
+				</li>
+				<li class="features__item">
+					<h3 class="features__title">Мы - професионалы своего дела</h3>
+					<p class="features__text">Наши дизайнеры постоянно повышают квалификацию, посещают курсы и тренинги, а студия уже реализовала свыше 1000 дизайн-проектов</p>
+				</li>
+				<li class="features__item">
+					<h3 class="features__title">Наши проекты индивидуальны</h3>
+					<p class="features__text">Каждый, созданный студией, интерьер - индивидуальное и максимально продуманное решение для каждого вида помещения</p>
+				</li>
+				<li class="features__item">
+					<h3 class="features__title">Работаем на выгодных условиях</h3>
+					<p class="features__text">Ценовая политика студии очень лояльна, мы осуществляем контроль всего процесса работы и получаем результат который делает клиентов счастливыми</p>
+				</li>
+			</ul>
+		</section>
+	</main>
+	<script src="js/toggle-menu.js"></script>
+	<script src="js/scroll-bottom.js"></script>
+	<script src="js/slider.js"></script>
+</body>
+</html>

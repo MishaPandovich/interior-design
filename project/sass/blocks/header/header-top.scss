@@ -1,0 +1,215 @@
+.header-top {
+	display: flex;
+}
+
+.logo {
+	margin-top: 24px;
+    margin-left: 5%;
+
+	width: 77px;
+    height: 23px;
+}
+
+.logo__img {
+	width: 77px;
+    height: 23px;
+}
+/*анимация кнопки*/
+.menu-toggle {
+	display: inline-block;
+    width: 36px;
+    height: 27px;
+
+    position: relative;
+    z-index: 3;
+    
+    margin-left: auto;
+    margin-top: 21px;
+    margin-right: 25px;
+    text-align: center;
+    outline: none;
+    cursor: pointer;
+}
+
+.menu-toggle button {
+	border: 0;
+	background: transparent;
+	font-size: 0;
+	
+	width: 35px;
+	height: 3px;
+	background: #ffffff;
+    border-radius: 15%;
+
+	outline: none;
+	cursor: pointer;
+
+	transition-duration: 0.8s, 0.8s;
+  	transition-property: transform, background;
+}
+
+.menu-toggle button::before,
+.menu-toggle button::after {
+	content: "";
+	position: absolute;
+    left: 0px;
+
+	display: block;
+	width: 35px;
+	height: 3px;
+	background: #ffffff;
+    border-radius: 15%;
+
+    transition-duration: 0.8s;
+  	transition-property: transform;
+}
+
+.menu-toggle button::before {
+	top: 10px;
+	transform: translate(0, -10px);
+}
+
+.menu-toggle button::after {
+	bottom: 8px;
+	transform: translate(0, 8px);
+}
+
+/*изменение кнопки*/
+.menu-close button::before {
+	transform: translate(0, 0) rotate(45deg);
+}
+
+.menu-close button::after {
+	transform: translate(0, -5px) rotate(-45deg);
+}
+
+.menu-close button {
+	background: transparent;
+}
+
+.phone {
+	display: none;
+}
+
+@media (min-width: 768px) {
+	.logo {
+		margin-top: 60px;
+		width: 140px;
+	    height: 40px;
+	}
+
+	.logo__img {
+		width: 140px;
+	    height: 40px;
+	}
+
+	.menu-toggle {
+	    width: 70px;
+    	margin-top: 60px;
+    	margin-right: 45px;
+	}
+
+	.menu-toggle button {
+		width: 66px;
+		height: 5px;
+	}
+
+	.menu-toggle button::before,
+	.menu-toggle button::after {
+		width: 66px;
+		height: 5px;	
+		left: 1px;
+	}
+
+	.menu-toggle button::before {
+		top: 5px;
+	}
+
+	.menu-toggle button::after {
+		bottom: 1px;
+	}
+
+	.menu-close button::after {
+		transform: translate(0, -15px) rotate(-45deg);
+	}
+}
+
+@media (min-width: 1050px) {
+	.logo {
+		position: absolute;
+		top: 25px;
+    	left: 0;
+    	right: 0;
+    	z-index: 2;
+
+    	margin: auto;
+	}
+
+	.logo__img {
+		width: 98px;
+    	height: 29px;
+    	margin-left: 38px;
+	}
+	
+	.menu-toggle {
+		order: -1;
+		margin-left: 20px;
+		
+		width: 36px;
+    	height: 27px;
+
+    	margin-top: 25px;
+    	margin-left: 95px;
+	}
+
+	.menu-toggle button {
+		width: 35px;
+		height: 3px;
+	}
+
+	.menu-toggle button::before,
+	.menu-toggle button::after {
+		width: 35px;
+		height: 3px;	
+	}
+
+	.menu-toggle button::before {
+		top: 10px;
+		transform: translate(0, -10px);
+	}
+
+	.menu-toggle button::after {
+		bottom: 8px;
+		transform: translate(0, 8px);
+	}
+
+	.menu-close button::before {
+		transform: translate(0, 0) rotate(45deg);
+	}
+
+	.menu-close button::after {
+		transform: translate(0, -5px) rotate(-45deg);
+	}
+
+	.phone {
+		display: inline-block;
+		margin-top: 30px;
+    	margin-left: auto;
+    	margin-right: 95px;
+
+    	font-family: 'Montserrat', sans-serif;
+		font-size: 14px;
+		text-decoration: none;
+		color: #000000;
+	}
+
+	.phone::before {
+		content: "";
+	    display: inline-block;
+	    margin-right: 10px;
+	    width: 20px;
+	    height: 20px;
+	    background: url(../img/phone.png) no-repeat;
+	    background-size: cover;
+	}
+}
